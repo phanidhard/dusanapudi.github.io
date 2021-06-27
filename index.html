@@ -1,10 +1,77 @@
 <html>
 	<head>
 		<title>HBD Subbu</title>
+		<style>
+		#parent {
+	position: relative;
+	background-color: white;
+	overflow: hidden;
+}
+#temp {
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	justify-content: center;
+	height: 100%;
+	flex-direction: row;
+}
+.message {
+	position:absolute;
+	bottom: -120px;
+	height: 120px;
+	width: 120px;
+	background-color: yellow;
+	color: blue;
+	line-height: 115px;
+	text-align: center;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	border-radius: 60px;
+	animation: move 6s infinite linear;
+}
+.message:nth-child(2){
+	right: 120px;
+	animation-delay: 1s;
+}
+.message:nth-child(3){
+	left: 120px;
+	animation-delay: 2s;
+}
+.message:nth-child(4){
+	left: 750px;
+	animation-delay: 4s;
+}
+@keyframes move {
+	0% {
+		bottom: -120px;
+	}
+	100% {
+		bottom: 100%;
+	}
+}
+		</style>
 	</head>
-	<body>
-		<h2 style="text-align:center;color:#f50d05;font-size:300%;font-family: 'Roboto';">Happy Birthday Subbu in Advance 🎉🎊.</h2>
-<h3 id="demo" style="text-align:center;color:blue;font-size:400%;"></h3>
+	<body id = "parent">
+	
+	
+	<div id="temp">
+		<div id = "t">
+			<small>
+		<div class="message">Happy Birthday</div>
+		<div class="message">Annaa</div>
+		<div class="message">Subbu </div>
+		<div class="message">Party</div>
+	</small>
+		<h2 style="text-align:center;color:#f50d05;font-size:300%;font-family: 'Roboto';">Happy Birthday Subbu 🎉🎊.</h2>
+	<h3 id="demo" style="text-align:center;color:blue;font-size:400%;"></h3>
+   <center>
+		<img src="https://firebasestorage.googleapis.com/v0/b/smplupdw.appspot.com/o/IMG-20200626-WA0027.jpg?alt=media&token=36cf4271-3e10-4b9b-806c-23007713073e" alt="Refresh" width="500" height="333"/></center>
+	<div class=central>
+	</div>
+	</div>
+	</div>
+	
 <script>
 // Set the date we're counting down to
 var countDownDate = new Date("Jun 27, 2021 01:01:01").getTime();
@@ -35,13 +102,6 @@ var x = setInterval(function() {
   }
 }, 1000);
 </script>
-<center>
-<img src="https://firebasestorage.googleapis.com/v0/b/smplupdw.appspot.com/o/IMG-20200626-WA0027.jpg?alt=media&token=36cf4271-3e10-4b9b-806c-23007713073e" alt="Refresh" width="500" height="333"/></center>
-<div class=central>
-    <video id="vid2" width="400" controls>
-        <source src="https://firebasestorage.googleapis.com/v0/b/smplupdw.appspot.com/o/VID-20210624-WA0009.mp4?alt=media&token=60fb6d34-dab4-4d59-ae1d-25511d7c7741" type="video/mp4">
-    </video>
-</div>
 
 <style>
 div.central { 
